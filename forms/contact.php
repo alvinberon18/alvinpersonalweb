@@ -26,7 +26,7 @@
   $contact->smtp = array(
     'host' => 'alvinberon18@gmail.com',
     'username' => 'alvinberon18@gmail.com',
-    'password' => 'lovefaith',
+    'password' => 'tuws rqyi agha yolh',
     'port' => '587'
   );
 
@@ -37,6 +37,7 @@
 
   echo $contact->send();
 ?>
+
 
 
 
