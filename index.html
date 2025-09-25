@@ -34,7 +34,17 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
-  
+   <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "nuQ9hXOAMYGUUaBN3",
+      });
+   })();
+</script>
+<script src="script.js"></script>
 </head>
 
 <body class="index-page"class="use-custom-cursor">
@@ -648,7 +658,7 @@
           </div>
 
           <div class="col-lg-7">
-                         <form action="contact1.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+            <form class="info-wrap" data-aos="fade-up" data-aos-delay="200">
               <div class="row gy-4">
 
                 <div class="col-md-6">
@@ -671,12 +681,9 @@
                   <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
                 </div>
 
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
+  
 
-                  <button type="submit">Send Message</button>
+                  <button type="submit" onclick="sendMail()">Send Message</button>
                 </div>
 
               </div>
@@ -695,7 +702,6 @@
 
     <div class="container">
       <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">iPortfolio</strong> <span>All Rights Reserved</span></p>
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
